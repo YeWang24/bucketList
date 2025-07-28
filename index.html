@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Pictures/bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 80%;
+            max-width: 830px;
+            position: fixed;
+            top: 30px;
+            background-color: rgba(51, 51, 51, 0.5);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 1.5em;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Ensure they are centered vertically as well */
+            height: 25px;
+        }
+        .header a {
+            margin: 0 10px;
+        }
+        .header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.507);
+            backdrop-filter: blur(20px);
+            border: 5px solid rgba(255, 255, 255, 0);
+        }
+        .content-container {
+            width: 70%;
+            max-width: 800px;
+            margin-top: 120px;
+            flex-grow: 1;
+            overflow-y: scroll;
+            background-color: rgba(51, 51, 51, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            /* border-top-left-radius: 50px;
+            border-top-right-radius: 50px; */
+            border-radius: 50px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 1.2em;
+            height: calc(100vh - 160px);
+            border: none;
+        }
+        .content-container::-webkit-scrollbar {
+            display: none;
+        }
+        .content-container {
+            scrollbar-width: none;
+        }
+        .destination-cards {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 20px 0;
+        }
+        .card {
+            background: #3d3d3d81;
+            border-radius: 12px;
+            padding: 15px;
+            width: 250px;
+            color: white;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 150px; /* Adjust this value as needed */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 10px;
+        }
+
+        .title {
+            text-align: center;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="Travelled Places.html"><img src="Pictures/world-map.png" alt="Icon 2"></a>
+        <a href="Travel Buddies.html"><img src="Pictures/people.png" alt="Icon 3"></a>
+        <a href="index.html" ><img src="Pictures/home_black.png" alt="Icon 1" style="height:50px; width: 50px;  border: 5px solid rgb(255, 255, 255);" ></a>
+        <a href="Local Foods and Drinks.html"><img src="Pictures/food.png" alt="Icon 4"></a>
+        <a href="Favorite places.html"><img src="Pictures/pin.png" alt="Icon 5"></a>
+    </div>
+    <div class="content-container">
+        <div style="background-image: url('Pictures/content%20first.jpg'); height: 70%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <h1 style="margin-bottom: 2px; color: white;">MY BUCKET LIST</h1>
+            <p style="margin-top: 2px;">John Matthew B. Garrido</p>
+        </div>
+
+        <div>
+            <h1 class="title">Where you want to go next?</h1>
+        </div>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="Pictures/boracay.jpg" alt="Bali">
+                <p>Boracay</p>
+            </div>
+            <div class="card">
+                <img src="Pictures/puerto palawan.jpg" alt="Paris">
+                <p>Puerto Princesa</p>
+            </div>
+            <div class="card">
+                <img src="Pictures/rice terraces.jpg" alt="Tokyo">
+                <p>Rice Terraces</p>
+            </div>
+            <div class="card">
+                <img src="Pictures/hills.jpg" alt="Rome">
+                <p>Chocolate Hills</p>
+            </div>
+        </div>
+
+        <div class="destination-cards" style="display: flex; justify-content: center; align-items: center;">
+            <div class="card">
+                <img src="Pictures/tokyo.jpg" alt="Tokyo">
+                <p>Tokyo, Japan</p>
+            </div>
+            <div class="card">
+                <img src="Pictures/rome.jpg" alt="Rome">
+                <p>Rome, Italy</p>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+</body>
+</html>

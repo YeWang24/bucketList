@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter {
+            background: #444;
+            padding: 8px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .cards {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+        .card {
+            background: #333;
+            border-radius: 12px;
+            padding: 15px;
+            width: 250px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .info {
+            margin-top: 10px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Explore the world</h2>
+        <div class="filters">
+            <div class="filter">Filters</div>
+            <div class="filter">Nearby</div>
+            <div class="filter">Popular</div>
+            <div class="filter">Recommendation</div>
+            <div class="filter">New</div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="bali.png" alt="Bali, Indonesia">
+                <div class="info">
+                    <strong>Bali, Indonesia</strong>
+                    <p>Over 500 places</p>
+                    <div class="rating">⭐ 5.0</div>
+                    <p>Start from $25-$1,000 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="paris.png" alt="Paris, France">
+                <div class="info">
+                    <strong>Paris, France</strong>
+                    <p>Over 500 places</p>
+                    <div class="rating">⭐ 4.8</div>
+                    <p>Start from $100-$4,000 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tokyo.png" alt="Tokyo, Japan">
+                <div class="info">
+                    <strong>Tokyo, Japan</strong>
+                    <p>Over 1,000 places</p>
+                    <div class="rating">⭐ 4.7</div>
+                    <p>Start from $80-$3,500 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="rome.png" alt="Rome, Italy">
+                <div class="info">
+                    <strong>Rome, Italy</strong>
+                    <p>Over 600 places</p>
+                    <div class="rating">⭐ 4.9</div>
+                    <p>Start from $150-$4,000 night</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
